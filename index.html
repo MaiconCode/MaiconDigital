@@ -18,6 +18,8 @@
 
 </head>
 <body>
+
+    <!-- Cabelhario da Pagina -->
     <header>
         <div class="container">
             <nav id="barra-navegacao">
@@ -25,16 +27,16 @@
                     <h1><a href="#">Maicon<span style="color: #0F5972">Digital</span></a></h1>
                 </div>
                 <ul id="lista-menus" type="none">
-                    <li>HOME</li>
-                    <li>ABOUTE ME</li>
-                    <li>SKILLS</li>
-                    <li>PROJECT</li>
-                    <li>CONTACT</li>
+                    <li>home</li>
+                    <li>about me</li>
+                    <li>skills</li>
+                    <li>project</li>
+                    <li>contact</li>
                 </ul>
             </nav>
             <div id="introducao">
                 <div id="aprensetacao-header">
-                    <h2 style="text-align: center; ">Welcome to the my website</h2>
+                    <h2 class="subtitulo" style="text-align: center; ">Welcome to the my website</h2>
                     <p style="width: 400px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias ipsam laborum
                         reiciendis atque, perfersperiores, totam.
                     </p>
@@ -45,5 +47,35 @@
             </div>
         </div>
     </header>
+
+    <!-- Conteudo da Pagina -->
+    <div class="container">
+        <section id="sessao-about-me">
+            <div>
+                <h2 class="subtitulo">Hi, my name is Maicon Teixeira</h2>
+                <p style="width: 400px; margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro id odio
+                autem inventore ratione rerum iusto voluptatem reprehenderit ullam, harum aperiam.
+                </p>
+                <div id="area-botoes">
+                    <button class="btn btn-linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                        Linkedin
+                    </button>
+                    <button class="btn btn-github" style="margin-left: 10px;">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </button>
+                    <br>
+                    <button class="btn btn-curriculo" style="margin-top: 10px;">
+                        <i class="fa-solid fa-upload" style="margin-left: 10px;"></i>
+                        Curriculo
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img id="img-perfil" src="img/maicon.png" alt="Foto do Maicon">
+            </div>
+        </section>
+    </div>
 </body>
 </html>
