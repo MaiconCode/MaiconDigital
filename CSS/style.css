@@ -88,6 +88,76 @@ a {
 #div-list > div > ul {
     margin-top: 10px;
 }
+#section-project {
+    background-color: #fff;
+    padding: 20px 0px;
+}
+
+/* ========= Sessão de Cards =================== */
+#div-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    background-color: #0F5972;
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 500px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 350px;
+    background-color: #DCE4EC;
+    box-shadow: #122c34 10px 10px;
+}
+.card > ul {
+    display: flex;
+}
+.card > ul > li {
+    padding-right: 10px;
+}
+.btn-view-project {
+    background-color: #0F5972;
+    padding: 10px;
+    color: #DCE4EC;
+    font-family: "Kumbh Sans", sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 19px;
+    cursor: pointer;
+}
+.btn-view-project:hover {
+    background-color: #143945;
+}
+.icon-arrow {
+    background-color: #ffffff;
+    color: #0F5972;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 360px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.icon-arrow:hover {
+    background-color: #97afb7;
+}
+.img-card {
+    display: flex;
+    justify-content: center;
+}
+.img-card > img{
+    border-radius: 10px;
+    width: 90%;
+}
+/* ============================================= */
 .btn {
     cursor: pointer;
     width: 25%;
@@ -110,7 +180,7 @@ a {
     border: 2px solid #171616;
 }
 .btn-curriculo {
-    background: #0F5972;
+    background: #143945;
     color: #fff;
     border: 2px solid #E5EDF0;
 }
@@ -126,9 +196,8 @@ a {
     border: 2px solid #E5EDF0;
 }
 .btn-curriculo:hover {
-    background: #c2d2d8;
-    color: #0F5972;
-    border: 2px solid #0F5972;
+    background: #122c34;
+    color: #ffffff;
 }
 /* =============================================== */
 .container {
@@ -166,8 +235,25 @@ a {
         margin-left: 15px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .icon-arrow {
+        display: none;
+    }
+    #div-cards {
+        flex-direction: column;
+        margin-top: 1.2em;
+
+    }
+    .card {
+        margin-top: 5em;
+    }
+}
 /* Area do Dispostivo moveis */
 @media screen and (max-width: 767px) {
+    #lista-menus {
+        display: none;
+    }
     #area-botoes {
         flex-direction: column-reverse;
         justify-content: flex-start;
@@ -191,4 +277,20 @@ a {
         justify-content: center;
         margin-bottom: 3em;
     }
+    #section-project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div-cards {
+        flex-direction: column;
+        padding: 5em;
+    }
+    .card {
+        margin-top: 5em;
+    }
+    .icon-arrow {
+        display: none;
+    }
+    
 }
