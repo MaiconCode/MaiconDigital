@@ -99,5 +99,21 @@
     .icon-arrow {
         display: none;
     }
-    
+    /* Estilos para formulario */
+    #menu-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #menu-footer > ul {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #menu-footer > ul > li {
+        color: #fff;
+        cursor: pointer;
+        padding-top: 10px;
+    }
 }
