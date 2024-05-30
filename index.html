@@ -7,6 +7,7 @@
 
     <!-- link do CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-responsive.css">
 
     <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +64,6 @@
                         <i class="fa-brands fa-github"></i>
                         GitHub
                     </button>
-                    <br>
                     <button class="btn btn-curriculo" style="margin-top: 10px;">
                         <i class="fa-solid fa-upload" style="margin-left: 10px;"></i>
                         Curriculo
@@ -78,7 +78,7 @@
         <section id="sessao-skills">
             <div class="container">
                 <div style="padding: 1.5em 0;">
-                    <h2 class="subtitulo">My Skills</h2>
+                    <h2 class="subtitulo" >My Skills</h2>
                 </div>
                 <div id="div-list">
                     <div>
@@ -112,8 +112,11 @@
         </section>
         <section id="section-project">
             <div class="container">
-                <h2 class="subtitulo">My Project</h2>
+                <div id="titulo-project">
+                    <h2 class="subtitulo">My Project</h2>
+                </div>
                 <div id="div-cards">
+                    <h2 id="title-project-two" class="subtitulo cor-secundaria" >My Project</h2>
                     <div class="icon-arrow" style="background-color: #143945;">
                         <i class="fa-solid fa-chevron-up" style="transform: rotate(270deg);"></i>
                     </div>
@@ -162,6 +165,39 @@
                 </div>
             </div>
         </section>
-    </div>
+        <section id="section-contact">
+            <div class="container">
+                <div>
+                    <h2 class="subtitulo">Contact</h2>
+                </div>
+                <div id="conteudo-contact">
+                    <form action="">
+                        <div class="div-input">
+                            <label for="Nome">Nome:</label><br>
+                            <input type="text" class="input" placeholder="Digite o seu nome...">
+                        </div>
+                        <div class="div-input">
+                            <label for="email">Email:</label><br>
+                            <input type="email" class="input" placeholder="Digite o seu nome...">
+                        </div>
+                        <div class="div-input">
+                            <label for="Assunto">Assunto:</label><br>
+                            <input type="text" class="input" placeholder="Digite o seu nome...">
+                        </div>
+                        <div class="div-input">
+                            <label for="texto">Texto:</label><br>
+                            <textarea name="texto" id="texto" class="input" placeholder="Digite aqui.."></textarea>
+                        </div>
+                        <div>
+                            <button type="button" class="btn" id="btn-enviar-form">Enviar</button>
+                        </div>
+                    </form>
+                    <div id="div-img-citacao">
+                        <img src="img/circulo de citação.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+       
 </body>
 </html>

@@ -1,0 +1,103 @@
+/* Area do Desktop */
+@media screen and (min-width: 1024px) {
+    #aprensetacao-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #title-project-two {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .icon-arrow {
+        display: none;
+    }
+    #div-cards {
+        flex-direction: column;
+        margin-top: 1.2em;
+
+    }
+    .card {
+        margin-top: 5em;
+    }
+    #lista-menus, #titulo-project{
+        display: none;
+    }
+    
+    #title-project-two {
+        display: block;
+        margin-top: 1.5em;
+    }
+    #section-project, #div-cards {
+        padding: 0;
+    }
+}
+/* Area do Dispostivo moveis */
+@media screen and (max-width: 767px) {
+    #lista-menus, #titulo-project{
+        display: none;
+    }
+    #title-project-two {
+        display: block;
+    }
+    #section-project, #div-cards {
+        padding: 0;
+        margin: 0;
+    }
+    #area-botoes {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    #area-botoes > button {
+        width: 150px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    #div-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #div-list > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: center;
+        margin-bottom: 3em;
+    }
+    #section-project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div-cards {
+        flex-direction: column;
+        padding: 5em;
+    }
+    #titulo-project {
+        padding-left: 4em;
+    }
+    #conteudo-contact {
+        display: block;
+        margin-top: 15px;
+    }
+    #div-img-citacao {
+        margin-top: 3em;
+        width: 100%;
+    }
+    #div-img-citacao > img {
+        width: 300px;
+    }
+    .card {
+        margin-top: 5em;
+    }
+    .icon-arrow {
+        display: none;
+    }
+    
+}

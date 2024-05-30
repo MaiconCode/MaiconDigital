@@ -5,6 +5,7 @@
 }
 body {
     font-family: "Kumbh Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -57,7 +58,7 @@ a {
 #sessao-about-me {
     min-width: 400px;
     width: 100%;
-    background-color: #E5EDF0;
+    background-color: #cbdadf;
     padding: 5em;
     display: flex;
     justify-content: center;
@@ -72,9 +73,7 @@ a {
     transform: scaleX(1.1);
     transform: scaleY(1.2);
 }
-#area-botoes {
-    margin-top: 3em;
-}
+
 #sessao-skills {
     position: relative;
     background-color: #9EC5D2;
@@ -90,7 +89,7 @@ a {
 }
 #section-project {
     background-color: #fff;
-    padding: 20px 0px;
+    padding: 20px 0px 30px 0px; 
 }
 
 /* ========= Sessão de Cards =================== */
@@ -157,15 +156,73 @@ a {
     border-radius: 10px;
     width: 90%;
 }
-/* ============================================= */
+
+/* ============= Sessão de Contatos  =============================*/
+form {
+    width: 100%;
+}
+#section-contact {
+    background-color: #cbdadf;
+    padding: 20px 0px;
+}
+#conteudo-contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+#texto {
+    height: 300px;
+    font-family: "Kumbh Sans", sans-serif;
+    padding: 10px;
+    font-size: 16px;
+}
+label {
+    color: #0F5972;
+    font-size: 15px;
+    font-weight: 600;
+}
+.div-input {
+    margin-top: 1.3em;
+}
+.input {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+#btn-enviar-form {
+    background-color: #0F5972;
+    margin: 15px 0px 0px 0px;
+    color: #fff;
+    width: 200px;
+}
+#div-img-citacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#div-img-citacao > img {
+    width: 100%;
+    min-width: 500px;
+}
+/* =================== Configurando os botões ========================= */
+#area-botoes {
+    margin-top: 3em;
+}
 .btn {
     cursor: pointer;
+    margin: 10px;
     width: 25%;
     font-size: 16px;
     line-height: -40px;
     height: 40px;
     color: none;
     padding: 10px;
+    min-width: 200px;
     border-radius: 10px;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 500;
@@ -195,13 +252,13 @@ a {
     color: #c2d2d8;
     border: 2px solid #E5EDF0;
 }
-.btn-curriculo:hover {
+.btn-curriculo:hover, #btn-enviar-form:hover {
     background: #122c34;
     color: #ffffff;
 }
 /* =============================================== */
 .container {
-    margin: 0px 100px;
+    margin: 0 100px;
 }
 .border {
     border: 1px solid red;
@@ -209,7 +266,6 @@ a {
 .subtitulo {
     display: inline;
     color: #0F5972;
-    text-align: center;
     width: 350px;
     font-size: 32px;
 }
@@ -222,75 +278,4 @@ a {
 .menu-list-skills > li {
     font-size: 16px;
     padding: 5px 0px;
-}
-/* Area do Desktop */
-@media screen and (min-width: 1024px) {
-    #aprensetacao-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .btn-github {
-        margin-left: 15px;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    .icon-arrow {
-        display: none;
-    }
-    #div-cards {
-        flex-direction: column;
-        margin-top: 1.2em;
-
-    }
-    .card {
-        margin-top: 5em;
-    }
-}
-/* Area do Dispostivo moveis */
-@media screen and (max-width: 767px) {
-    #lista-menus {
-        display: none;
-    }
-    #area-botoes {
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-    }
-    #area-botoes > button {
-        width: 150px;
-        margin-top: 15px;
-        margin-left: 0;
-    }
-    #div-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    #div-list > div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: self-start;
-        justify-content: center;
-        margin-bottom: 3em;
-    }
-    #section-project {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #div-cards {
-        flex-direction: column;
-        padding: 5em;
-    }
-    .card {
-        margin-top: 5em;
-    }
-    .icon-arrow {
-        display: none;
-    }
-    
 }
