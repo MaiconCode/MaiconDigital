@@ -9,19 +9,50 @@
     #title-project-two {
         display: none;
     }
+    #lista-menus {
+        display: flex;
+    }
 }
+
+/* Area para Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #bars, #bars-close{
+        display: block;
+        font-size: 40px;
+        color: #0F5972;
+        cursor: pointer;
+        padding: 10px;
+    }
+    #bars:hover, #bars-close:hover{
+        color: #cbdadf;
+    }
+    #bars:active, #bars-close:active{
+        color: #7d7d7d;
+    }
+
+    #barra-navegacao {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        padding: 0px 20px;
+    }
+    #introducao {
+        margin-top: 6em;
+    }
 
     .icon-arrow {
         display: none;
     }
     #div-cards {
         flex-direction: column;
-        margin-top: 1.2em;
+        margin: 0;
+        padding-bottom: 0;
 
     }
     .card {
-        margin-top: 5em;
+        margin-top: 2em;
     }
     #lista-menus, #titulo-project{
         display: none;
@@ -37,9 +68,91 @@
 }
 /* Area do Dispostivo moveis */
 @media screen and (max-width: 767px) {
-    #lista-menus, #titulo-project{
+
+
+    #lista-menus, #titulo-project, #bars-close{
         display: none;
     }
+    #icon-btn-menu {
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        display: block;
+    } 
+    
+    #bars, #bars-close{
+        font-size: 40px;
+        color: #cacccd;
+        cursor: pointer;
+        padding: 10px;
+    }
+    #bars {
+        display: block;
+        color: #0F5972;
+    }
+    #bars:hover, #bars-close:hover{
+        color: #cbdadf;
+    }
+   
+    @keyframes animacao-menu {
+
+        /* Estado inicial */
+        from {
+            left: 100%;
+        }
+
+        /* Estado final */
+        to {
+            left: 0%;
+        }
+    }
+    @keyframes fechar-menu {
+
+        /* Estado inicial */
+        from {
+            left: 0%;
+        }
+
+        /* Estado final */
+        to {
+            left: 100%;
+        }
+    }
+    #lista-menus {
+        z-index: 1;
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        left: 100%;
+        background-color: #0F5972;
+        height: 600px;
+        width: 100%;
+    }
+    #img-perfil {
+        z-index: 0;
+    }
+    #lista-menus > li {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    #barra-navegacao {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        padding: 0px 20px;
+    }
+    #introducao {
+        margin-top: 6em;
+    }
+    
     #title-project-two {
         display: block;
     }

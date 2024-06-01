@@ -18,6 +18,10 @@ a {
     height: 90px;
     align-items: center;
 }
+#icon-btn-menu {
+    display: none;
+
+}
 #logo {
     font-size: 20px;
     cursor: pointer;
@@ -66,6 +70,7 @@ a {
 }
 
 #img-perfil {
+    z-index: 0;
     border-radius: 360px;
     height: 200px;
     width: 200px;
@@ -75,7 +80,6 @@ a {
 }
 
 #sessao-skills {
-    position: relative;
     background-color: #9EC5D2;
     width: 100%;
 }
@@ -99,10 +103,10 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 3em;
+    padding: 2em;
     background-color: #0F5972;
-    padding: 25px;
     border-radius: 10px;
-    min-width: 500px;
+    min-width: 300px;
 }
 .card {
     display: flex;
