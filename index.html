@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,17 +33,16 @@
                 </div>
                 <ul id="lista-menus" type="none">
                     <li>home</li>
-                    <li>about me</li>
-                    <li>skills</li>
-                    <li>project</li>
-                    <li>contact</li>
+                    <li onclick="scrollNav(0, 350)">about me</li>
+                    <li onclick="scrollNav(0, 700)">skills</li>
+                    <li onclick="scrollNav(0, 1150)">project</li>
+                    <li onclick="scrollNav(0, 1800)">contact</li>
                 </ul>
             </nav>
-            <div id="introducao">
+            <div id="introducao" class="hidden">
                 <div id="aprensetacao-header">
                     <h2 class="subtitulo" style="text-align: center; ">Welcome to the my website</h2><br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias ipsam laborum
-                        reiciendis atque, perfersperiores, totam.
+                    Welcome to my Maicon Digital page. Here you will learn more about my profession, my projects, my activities and learn more about me... come check it out!
                 </div>
                 <div id="div-header-img">
                     <img src="img/gato.png" alt="gao art" >
@@ -53,22 +52,21 @@
     </header>
 
     <!-- Conteudo da Pagina -->
-        <section id="sessao-about-me">
+        <section id="sessao-about-me" class="hidden">
             <div style="width: 40%; min-width: 160px;">
                 <h2 class="subtitulo">Hi, my name is Maicon Teixeira</h2>
-                <p style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro id odio
-                autem inventore ratione rerum iusto voluptatem reprehenderit ullam, harum aperiam.
+                <p style="margin-top: 10px;">I am a programmer and computer science student, I have a huge passion for technology, programming and innovation, on this page you will discover my best work I have ever done.
                 </p>
                 <div id="area-botoes">
-                    <button class="btn btn-linkedin">
+                    <button class="btn btn-linkedin" onclick="btn_click_open('https://www.linkedin.com/in/maicon-computacao/')">
                         <i class="fa-brands fa-linkedin"></i>
                         Linkedin
                     </button>
-                    <button class="btn btn-github">
+                    <button class="btn btn-github" onclick="btn_click_open('https://github.com/MaiconCode')">
                         <i class="fa-brands fa-github"></i>
                         GitHub
                     </button>
-                    <button class="btn btn-curriculo" style="margin-top: 10px;">
+                    <button class="btn btn-curriculo" style="margin-top: 10px;" onclick="btn_click_open()">
                         <i class="fa-solid fa-upload" style="margin-left: 10px;"></i>
                         Curriculo
                     </button>
@@ -79,7 +77,7 @@
                 <img id="img-perfil" src="img/maicon.png" alt="Foto do Maicon">
             </div>
         </section>
-        <section id="sessao-skills">
+        <section id="sessao-skills" class="hidden">
             <div class="container">
                 <div style="padding: 1.5em 0;">
                     <h2 class="subtitulo" >My Skills</h2>
@@ -114,7 +112,7 @@
                 </div>
             </div>
         </section>
-        <section id="section-project">
+        <section id="section-project" class="hidden">
             <div class="container">
                 <div id="titulo-project">
                     <h2 class="subtitulo">My Project</h2>
@@ -129,24 +127,23 @@
                             <img src="img/web-card-1.png" alt="Finans">
                         </div>
                         <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
-                        <p style="color: gray; font-size: 16px;">Ferramentas</p>
-                        <ul type="none">
-                            <li>Icon 1</li>
-                            <li>Icon 1</li>
-                            <li>Icon 1</li>
+                        <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                        <ul type="none" id="menu-icones-ferramentas">
+                            <li><i class="fa-brands fa-html5" style="color: #FC490B;"></i></li>
+                            <li><i class="fa-brands fa-css3-alt" style="color: #00A1DF;"></i></li>
                         </ul>
                         <input type="button" value="Visualizar" class="btn-view-project">
                     </div>
                     <div class="card">
                         <div class="img-card">
-                            <img src="img/web-card-1.png" alt="Finans">
+                            <img src="img/project-card1.png" alt="Calculadora">
                         </div>
-                        <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
-                        <p style="color: gray;">Ferramentas</p>
-                        <ul type="none">
-                            <li>Icon 1</li>
-                            <li>Icon 1</li>
-                            <li>Icon 1</li>
+                        <h3 style="margin-top: 10px;" class="cor-primaria">Calculadora</h3>
+                        <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                        <ul type="none" id="menu-icones-ferramentas">
+                            <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
+                            <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
+                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
                         </ul>
                         <input type="button" value="Visualizar" class="btn-view-project">
                     </div>
@@ -169,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section id="section-contact">
+        <section id="section-contact" class="hidden">
             <div class="container">
                 <div>
                     <h2 class="subtitulo">Contact</h2>
@@ -177,7 +174,7 @@
                 <div id="conteudo-contact">
                     <form action="">
                         <div class="div-input">
-                            <label for="Nome">Nome:</label><br>
+                            <label for="Nome">Name:</label><br>
                             <input type="text" class="input" placeholder="Digite o seu nome...">
                         </div>
                         <div class="div-input">
@@ -185,11 +182,11 @@
                             <input type="email" class="input" placeholder="Digite o seu nome...">
                         </div>
                         <div class="div-input">
-                            <label for="Assunto">Assunto:</label><br>
+                            <label for="Assunto">Subject:</label><br>
                             <input type="text" class="input" placeholder="Digite o seu nome...">
                         </div>
                         <div class="div-input">
-                            <label for="texto">Texto:</label><br>
+                            <label for="texto">Text:</label><br>
                             <textarea name="texto" id="texto" class="input" placeholder="Digite aqui.."></textarea>
                         </div>
                         <div>
@@ -204,7 +201,7 @@
         </section>
         <footer>
             <div class="container">
-                <div id="menu-footer">
+                <div id="menu-footer" class="hidden">
                     <ul type="none">
                         <li style="color: rgb(164, 164, 164);">Minhas redes socias</li>
                         <li style="margin-top: 10px;"><a href="#">Linkedin</a></li>

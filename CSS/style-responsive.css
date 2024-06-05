@@ -17,6 +17,9 @@
 /* Area para Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    #lista-menus, #titulo-project, #bars-close{
+        display: none;
+    }
     #bars, #bars-close{
         display: block;
         font-size: 40px;
@@ -24,11 +27,67 @@
         cursor: pointer;
         padding: 10px;
     }
+    #bars-close {
+        display: none;
+    }
+    #img-perfil {
+        z-index: 0;
+    }
+    #lista-menus > li {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+    #icon-btn-menu {
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        display: block;
+    } 
     #bars:hover, #bars-close:hover{
         color: #cbdadf;
     }
     #bars:active, #bars-close:active{
         color: #7d7d7d;
+    }
+    @keyframes animacao-menu {
+
+        /* Estado inicial */
+        from {
+            left: 100%;
+        }
+
+        /* Estado final */
+        to {
+            left: 0%;
+        }
+    }
+    @keyframes fechar-menu {
+
+        /* Estado inicial */
+        from {
+            left: 0%;
+        }
+
+        /* Estado final */
+        to {
+            left: 100%;
+        }
+    }
+    #lista-menus {
+        z-index: 1;
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        left: 100%;
+        background-color: #0F5972;
+        height: 600px;
+        width: 100%;
     }
 
     #barra-navegacao {
@@ -229,4 +288,5 @@
         cursor: pointer;
         padding-top: 10px;
     }
+    
 }
