@@ -29,10 +29,10 @@
                 </div>
                 <div id="icon-btn-menu">
                     <i id="bars" class="fa-solid fa-bars"></i>
-                    <i id="bars-close" class="fa-solid fa-xmark"></i>
+                    <i id="bars-close" class="fa-solid fa-xmark" onclick="fechar_menu()"></i>
                 </div>
                 <ul id="lista-menus" type="none">
-                    <li>home</li>
+                    <li onclick="scrollNav(0, 0)">home</li>
                     <li onclick="scrollNav(0, 350)">about me</li>
                     <li onclick="scrollNav(0, 700)">skills</li>
                     <li onclick="scrollNav(0, 1150)">project</li>
@@ -66,7 +66,7 @@
                         <i class="fa-brands fa-github"></i>
                         GitHub
                     </button>
-                    <button class="btn btn-curriculo" style="margin-top: 10px;" onclick="btn_click_open()">
+                    <button onclick="btn_click_open('https://drive.usercontent.google.com/u/0/uc?id=1_yK7e6ufzvW7-AaPLbXNJV1abrrl3njN&export=download')" class="btn btn-curriculo" style="margin-top: 10px;">
                         <i class="fa-solid fa-upload" style="margin-left: 10px;"></i>
                         Curriculo
                     </button>
@@ -117,53 +117,70 @@
                 <div id="titulo-project">
                     <h2 class="subtitulo">My Project</h2>
                 </div>
-                <div id="div-cards">
-                    <h2 id="title-project-two" class="subtitulo cor-secundaria" >My Project</h2>
-                    <div class="icon-arrow" style="background-color: #143945;">
-                        <i class="fa-solid fa-chevron-up" style="transform: rotate(270deg);"></i>
-                    </div>
-                    <div class="card">
-                        <div class="img-card">
-                            <img src="img/web-card-1.png" alt="Finans">
+                <div id="campo-cards">
+                    <div id="div-cards">
+                        <h2 id="title-project-two" class="subtitulo cor-secundaria" >My Project</h2>
+                        <div class="card card-1">
+                            <div class="img-card">
+                                <img src="img/web-card-1.png" alt="Finans">
+                            </div>
+                            <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
+                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                            <ul type="none" id="menu-icones-ferramentas">
+                                <li><i class="fa-brands fa-html5" style="color: #FC490B;"></i></li>
+                                <li><i class="fa-brands fa-css3-alt" style="color: #00A1DF;"></i></li>
+                            </ul>
+                            <input onclick="btn_click_open('https://github.com/MaiconCode/Finans/tree/master')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
-                        <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
-                        <p style="color: gray; font-size: 14px;">Ferramentas</p>
-                        <ul type="none" id="menu-icones-ferramentas">
-                            <li><i class="fa-brands fa-html5" style="color: #FC490B;"></i></li>
-                            <li><i class="fa-brands fa-css3-alt" style="color: #00A1DF;"></i></li>
-                        </ul>
-                        <input type="button" value="Visualizar" class="btn-view-project">
-                    </div>
-                    <div class="card">
-                        <div class="img-card">
-                            <img src="img/project-card1.png" alt="Calculadora">
+                        <div class="card card-2">
+                            <div class="img-card">
+                                <img src="img/project-card1.png" alt="Calculadora">
+                            </div>
+                            <h3 style="margin-top: 10px;" class="cor-primaria">Calculadora</h3>
+                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                            <ul type="none" id="menu-icones-ferramentas">
+                                <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
+                                <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
+                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
+                            </ul>
+                            <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_minha-primeira-calculadora-o-reposit%C3%B3rio-activity-7205263579728502784-GAgB?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
-                        <h3 style="margin-top: 10px;" class="cor-primaria">Calculadora</h3>
-                        <p style="color: gray; font-size: 14px;">Ferramentas</p>
-                        <ul type="none" id="menu-icones-ferramentas">
-                            <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
-                            <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
-                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
-                        </ul>
-                        <input type="button" value="Visualizar" class="btn-view-project">
-                    </div>
-                    <div class="card">
-                        <div class="img-card">
-                            <img src="img/web-card-1.png" alt="Finans">
+                        <div class="card card-3">
+                            <div class="img-card">
+                                <img src="img/tela de tarefas.png" alt="Lista de Tarefas">
+                            </div>
+                            <h3 style="margin-top: 10px;" class="cor-primaria">Lista de Tarefas</h3>
+                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                            <ul type="none">
+                                <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
+                                <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
+                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
+                                <li><img src="img/img-icones/materialize.png" width="40"></li>
+                                <li><img src="img/img-icones/PHP-logo.svg.png" width="40"></li>
+                                <li><img src="img/img-icones/mysql.png" width="40"></li>
+                            </ul>
+                            <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_desenvolvimento-projeto-de-tarefas-di%C3%A1rias-activity-7205003499053441024-qFkQ?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
-                        <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
-                        <p style="color: gray;">Ferramentas</p>
-                        <ul type="none">
-                            <li>Icon 1</li>
-                            <li>Icon 1</li>
-                            <li>Icon 1</li>
-                        </ul>
-                        <input type="button" value="Visualizar" class="btn-view-project">
+                        <div class="card card-4">
+                            <div class="img-card">
+                                <img src="img/breve.png" alt="Em breve">
+                            </div>
+                            <h3 style="margin-top: 10px;" class="cor-primaria">Em Breve</h3>
+                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                            <ul type="none">
+                                <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
+                                <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
+                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
+                                <li><img src="img/img-icones/PHP-logo.svg.png" width="40"></li>
+                            </ul>
+                            <input onclick="btn_click_open('https://www.linkedin.com/in/maicon-computacao/')" type="button" value="Visualizar" class="btn-view-project">
+                        </div>
                     </div>
-                    <div class="icon-arrow">
-                        <i class="fa-solid fa-chevron-up" style="transform: rotate(90deg);"></i>
+                    <div id="icon-arrows">
+                        <i onclick="moverCards('esquerda')" class="fa-solid fa-chevron-up icon-left icon-desable" style="transform: rotate(270deg);"></i>
+                        <i onclick="moverCards('direita')" class="fa-solid fa-chevron-up icon-right " style="transform: rotate(90deg);"></i>
                     </div>
-                </div>
+                </div>   
             </div>
         </section>
         <section id="section-contact" class="hidden">
@@ -173,10 +190,6 @@
                 </div>
                 <div id="conteudo-contact">
                     <form action="">
-                        <div class="div-input">
-                            <label for="Nome">Name:</label><br>
-                            <input type="text" class="input" placeholder="Digite o seu nome...">
-                        </div>
                         <div class="div-input">
                             <label for="email">Email:</label><br>
                             <input type="email" class="input" placeholder="Digite o seu nome...">

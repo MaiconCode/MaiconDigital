@@ -101,7 +101,7 @@
         margin-top: 6em;
     }
 
-    .icon-arrow {
+    #icon-arrows {
         display: none;
     }
     #div-cards {
@@ -268,7 +268,7 @@
     .card {
         margin-top: 5em;
     }
-    .icon-arrow {
+    #icon-arrows {
         display: none;
     }
     /* Estilos para formulario */

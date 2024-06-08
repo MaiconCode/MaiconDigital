@@ -101,14 +101,19 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 3em;
     padding: 2em;
-    background-color: #0F5972;
     border-radius: 10px;
     min-width: 300px;
 }
+#campo-cards {
+    background-color: #0F5972;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
 .card {
+    margin: 2em;
     display: flex;
     flex-direction: column;
     width: 28%;
@@ -142,19 +147,32 @@ a {
 .btn-view-project:hover {
     background-color: #143945;
 }
-.icon-arrow {
-    background-color: #ffffff;
-    color: #0F5972;
+#icon-arrows {
+   
     height: 40px;
-    width: 40px;
-    text-align: center;
+    width: 100%;
     line-height: 40px;
     border-radius: 360px;
     font-size: 19px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
-.icon-arrow:hover {
+#icon-arrows > i {
+    background-color: #fff;
+    color: #0F5972;
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+}
+#icon-arrows > i:hover {
     background-color: #97afb7;
+}
+.icon-desable {
+    background-color: #042d3b !important;
 }
 .img-card {
     display: flex;
@@ -163,6 +181,7 @@ a {
 .img-card > img{
     border-radius: 10px;
     width: 90%;
+    height: 150px;
 }
 
 /* ============= Sessão de Contatos  =============================*/
