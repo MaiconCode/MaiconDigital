@@ -4,7 +4,7 @@
     print_r($_POST);
     echo '</pre>';
 
-    $to = $_POST['email'];
+    $to = 'maicondigital900@gmail.com';
     $subject = $_POST['assunto'];
     $message = $_POST['texto'];
     // $headers = 'from: exemplo@exemplo@gmail.com' . '\r\n' . 'Reply-to: exemplo@exemplo.com';
