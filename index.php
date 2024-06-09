@@ -215,7 +215,7 @@
                         </div>
                     </form>
                     <div id="div-img-citacao">
-                        <img src="img/circulo de citação.png">
+                        <img src="img/circulo-citacao.png">
                     </div>
                 </div>
             </div>
