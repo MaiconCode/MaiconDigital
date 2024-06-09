@@ -37,7 +37,7 @@ function btn_click_open(url) {
 }
 
 // Apresentação do sessão sobre mim
-let texto = "Welcome to the my website"
+let texto = "Seja muito bem vindo ao meu portifório"
 let apresentacao = document.getElementsByClassName('subtitulo')[0]
 let indice = 0
 apresentacao.innerHTML = ''
@@ -56,49 +56,6 @@ let delay = setInterval(function(){
     }, 100)
 }, 2000)
 
-// ======== Navegação com site com uso scroll e menu 
-function scrollNav(x, y) {
-
-    let bars_close = document.getElementById('bars-close')
-    let janelaLagura = window.innerWidth
-    display_bars_close = bars_close.style.display
-
-    console.log(janelaLagura)
-    
-    console.log(display_bars_close)
-
-    if(display_bars_close == 'block') {
-        fechar_menu()
-    }
-
-    if(janelaLagura <= 1022 && janelaLagura > 768) {
-        console.log('lagura no tablet')
-        console.log(y)
-
-        switch (y) {
-
-            case 700:
-                
-                let project = document.getElementById('section-project')
-                console.log(project.getBoundingClientRect())
-                break;
-            case 1150:
-                y += 400
-                break;
-            case 1800:
-                y += 600
-                break;
-        
-            default:
-                break;
-        }
-
-    } else if(janelaLagura < 768) {
-        console.log('lagura no celular')
-    }
-
-    window.scrollTo(x, y)
-}
 
 // Transição dos cards do projeto
 function moverCards(direcao) {
@@ -116,7 +73,10 @@ function moverCards(direcao) {
         iconRight.className = 'fa-solid fa-chevron-up icon-right '
 
         cardsFist.style.display = 'flex'
-        cardLast.style.display = 'none'
+        // cardLast.style.display = 'none'
+        $(cardLast).hide('slow')
+        $(cardsFist).show('slow')
+
         
     }
     else if(direcao == 'direita') {
@@ -127,8 +87,10 @@ function moverCards(direcao) {
         iconLeft.className = 'fa-solid fa-chevron-up icon-left '
         iconRight.className += 'icon-desable '
 
-        cardsFist.style.display = 'none'
-        cardLast.style.display = 'flex'
+        // cardsFist.style.display = 'none'
+        $(cardsFist).hide('slow')
+        // cardLast.style.display = 'flex'
+        $(cardLast).show('slow')
     }
     // console.log(icon)
 }

@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,11 @@
     <!-- link do CSS -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/style-responsive.css">
+
+    <link rel="shortcut icon" type="imagex/png" href="img/logo.png">
+
+    <!-- Link do Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,30 +38,32 @@
                     <i id="bars-close" class="fa-solid fa-xmark" onclick="fechar_menu()"></i>
                 </div>
                 <ul id="lista-menus" type="none">
-                    <li onclick="scrollNav(0, 0)">home</li>
-                    <li onclick="scrollNav(0, 350)">about me</li>
-                    <li onclick="scrollNav(0, 700)">skills</li>
-                    <li onclick="scrollNav(0, 1150)">project</li>
-                    <li onclick="scrollNav(0, 1800)">contact</li>
+                    <li><a href="#barra-navegacao">Inicio</a></li>
+                    <li><a onclick="fechar_menu()" href="#sessao-about-me">Sobre mim</a></li>
+                    <li><a onclick="fechar_menu()" href="#sessao-skills">Habilidades</a></li>
+                    <li><a onclick="fechar_menu()" href="#section-project">Projetos</a></li>
+                    <li><a onclick="fechar_menu()" href="#section-contact">Contato</a></li>
                 </ul>
             </nav>
-            <div id="introducao" class="hidden">
+        </div>
+    </header>
+
+    <section id="introducao" class="hidden"  style="min-width: 160px;">
                 <div id="aprensetacao-header">
-                    <h2 class="subtitulo" style="text-align: center; ">Welcome to the my website</h2><br><br>
-                    Welcome to my Maicon Digital page. Here you will learn more about my profession, my projects, my activities and learn more about me... come check it out!
+                    <h3 class="subtitulo" style="text-align: center; ">Seja muito bem vindo com a minha pagina</h3><br><br>
+                    <p>Aqui, você vai conhecer mais sobre mim através dos meus projetos, minhas atividades, habilidades e muito mais</p>
                 </div>
                 <div id="div-header-img">
                     <img src="img/gato.png" alt="gao art" >
                 </div>
-            </div>
-        </div>
-    </header>
+    </section>
 
     <!-- Conteudo da Pagina -->
         <section id="sessao-about-me" class="hidden">
             <div style="width: 40%; min-width: 160px;">
-                <h2 class="subtitulo">Hi, my name is Maicon Teixeira</h2>
-                <p style="margin-top: 10px;">I am a programmer and computer science student, I have a huge passion for technology, programming and innovation, on this page you will discover my best work I have ever done.
+                <h2 class="subtitulo">Olá, meu nome é Maicon Teixeira</h2>
+                <p style="margin-top: 10px;">Sou programador e estudante de ciência da computação, tenho uma enorme paixão por tecnologia, programação e inovação, nesta página você descobrirá meus melhores trabalhos que já fiz.
+
                 </p>
                 <div id="area-botoes">
                     <button class="btn btn-linkedin" onclick="btn_click_open('https://www.linkedin.com/in/maicon-computacao/')">
@@ -80,33 +88,33 @@
         <section id="sessao-skills" class="hidden">
             <div class="container">
                 <div style="padding: 1.5em 0;">
-                    <h2 class="subtitulo" >My Skills</h2>
+                    <h2 class="subtitulo" >Habilidades</h2>
                 </div>
                 <div id="div-list">
                     <div>
                         <h2 class="cor-primaria">Hard Skills</h2>
                         <ul class="menu-list-skills" type="none">
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Web Developer</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>UI/UX</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Computing</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Desenvolvimento Web</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Redes de Computadores</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Design</li>
                             <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Pacote Office</li>
                         </ul>
                     </div>
                     <div>
                         <h2 class="cor-primaria">Soft Skills</h2>
                         <ul class="menu-list-skills" type="none">
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Interpersonal Comunication</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Proactivy</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Organizations</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>flexibility</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Comunicação Interpessoal</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Proatividade</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Organização</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Flexibilidade</li>
                         </ul>
                     </div>
                     <div>
                         <h2 class="cor-primaria">Extra</h2>
                         <ul class="menu-list-skills" type="none">
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Intermediary Englisg</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Analytical</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Dynamic</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Inglês Intermediário</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Analítico</li>
+                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Dinâmico</li>
                         </ul>
                     </div>
                 </div>
@@ -115,7 +123,7 @@
         <section id="section-project" class="hidden">
             <div class="container">
                 <div id="titulo-project">
-                    <h2 class="subtitulo">My Project</h2>
+                    <h2 class="subtitulo">Meus Projetos</h2>
                 </div>
                 <div id="campo-cards">
                     <div id="div-cards">
@@ -186,24 +194,24 @@
         <section id="section-contact" class="hidden">
             <div class="container">
                 <div>
-                    <h2 class="subtitulo">Contact</h2>
+                    <h2 class="subtitulo">Contato</h2>
                 </div>
                 <div id="conteudo-contact">
-                    <form action="">
+                    <form action="/envio_email.php" method="post">
                         <div class="div-input">
                             <label for="email">Email:</label><br>
-                            <input type="email" class="input" placeholder="Digite o seu nome...">
+                            <input name="email" type="email" class="input" placeholder="Digite o seu email...">
                         </div>
                         <div class="div-input">
-                            <label for="Assunto">Subject:</label><br>
-                            <input type="text" class="input" placeholder="Digite o seu nome...">
+                            <label for="Assunto">titulo:</label><br>
+                            <input name="assunto" type="text" class="input" placeholder="Digite o seu assunto...">
                         </div>
                         <div class="div-input">
-                            <label for="texto">Text:</label><br>
-                            <textarea name="texto" id="texto" class="input" placeholder="Digite aqui.."></textarea>
+                            <label for="texto">testo:</label><br>
+                            <textarea name="texto" name="texto" id="texto" class="input" placeholder="Digite aqui.."></textarea>
                         </div>
                         <div>
-                            <button type="button" class="btn" id="btn-enviar-form">Enviar</button>
+                            <button type="submit" class="btn" id="btn-enviar-form">Enviar</button>
                         </div>
                     </form>
                     <div id="div-img-citacao">
@@ -217,17 +225,17 @@
                 <div id="menu-footer" class="hidden">
                     <ul type="none">
                         <li style="color: rgb(164, 164, 164);">Minhas redes socias</li>
-                        <li style="margin-top: 10px;"><a href="#">Linkedin</a></li>
-                        <li><a href="#">GitHub</a></li>
+                        <li onclick="btn_click_open('https://www.linkedin.com/in/maicon-computacao/')"  style="margin-top: 10px;"><a href="#">Linkedin</a></li>
+                        <li onclick="btn_click_open('https://github.com/MaiconCode')"><a href="#">GitHub</a></li>
                     </ul>
                     <ul type="none">
                         <li style="color: rgb(164, 164, 164);">Navegação</li>
-                        <li>Home</li>
-                        <li>About me</li>
-                        <li>Skills</li>
-                        <li>Project</li>
-                        <li>Contact</li>
-                    </ul>
+                        <li><a href="#barra-navegacao">Inicio</a></li>
+                        <li><a onclick="fechar_menu()" href="#sessao-about-me">Sobre mim</a></li>
+                        <li><a onclick="fechar_menu()" href="#sessao-skills">Habilidades</a></li>
+                        <li><a onclick="fechar_menu()" href="#section-project">Projetos</a></li>
+                        <li><a onclick="fechar_menu()" href="#section-contact">Contato</a></li>
+                        </ul>
                     <ul type="none">
                         <li style="color: rgb(164, 164, 164);">Meus contatos e localidade</li>
                         <li><i class="fa-solid fa-phone" style="margin-right: 10px;"></i>93731-7947</li>

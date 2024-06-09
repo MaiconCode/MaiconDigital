@@ -6,16 +6,26 @@
         align-items: center;
         justify-content: center;
     }
+    #introducao {
+        height: 325px;
+    }
     #title-project-two {
         display: none;
     }
     #lista-menus {
         display: flex;
     }
+    #sessao-about-me, #sessao-skills {
+        height: 70%;
+    }
 }
 
 /* Area para Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #div-header-img > img{
+        width: 60px;
+    }
 
     #lista-menus, #titulo-project, #bars-close{
         display: none;
@@ -33,7 +43,7 @@
     #img-perfil {
         z-index: 0;
     }
-    #lista-menus > li {
+    #lista-menus > li > a{
         width: 100%;
         text-align: center;
         margin-top: 10px;
@@ -112,6 +122,7 @@
     }
     .card {
         margin-top: 2em;
+        min-width: 350px;
     }
     #lista-menus, #titulo-project{
         display: none;
@@ -193,7 +204,7 @@
     #img-perfil {
         z-index: 0;
     }
-    #lista-menus > li {
+    #lista-menus > li > a{
         width: 100%;
         text-align: center;
         margin-top: 10px;
@@ -208,10 +219,8 @@
         left: 0;
         padding: 0px 20px;
     }
-    #introducao {
-        margin-top: 6em;
-    }
     
+
     #title-project-two {
         display: block;
     }
@@ -267,6 +276,7 @@
     }
     .card {
         margin-top: 5em;
+        min-width: 300px;
     }
     #icon-arrows {
         display: none;
@@ -287,6 +297,23 @@
         color: #fff;
         cursor: pointer;
         padding-top: 10px;
+    }
+    section {
+        width: 100%;
+    }
+    #introducao {
+        padding: 2em;
+        margin: 0 15px;
+        float: left;
+        margin-top: 6em;
+    }
+    #aprensetacao-header {
+        width: 40%;
+        min-width: 150px;
+    }
+    #div-header-img > img{
+        width: 40%;
+        min-width: 200px;
     }
     
 }
