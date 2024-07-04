@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scaleble=no">
     <title>Maicon Digital - Portiforio</title>
 
     <!-- link do CSS -->
@@ -11,6 +12,8 @@
     <link rel="stylesheet" href="CSS/style-responsive.css">
 
     <link rel="shortcut icon" type="imagex/png" href="img/logo.png">
+
+
 
     <!-- Link do Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -50,7 +53,7 @@
 
     <section id="introducao" class="hidden"  style="min-width: 160px;">
                 <div id="aprensetacao-header">
-                    <h3 class="subtitulo" style="text-align: center; ">Seja muito bem vindo com a minha pagina</h3><br><br>
+                    <h3 class="title-into" style="text-align: center; ">Seja muito bem vindo com a minha pagina</h3>
                     <p>Aqui, você vai conhecer mais sobre mim através dos meus projetos, minhas atividades, habilidades e muito mais</p>
                 </div>
                 <div id="div-header-img">
@@ -74,7 +77,7 @@
                         <i class="fa-brands fa-github"></i>
                         GitHub
                     </button>
-                    <button onclick="btn_click_open('https://drive.usercontent.google.com/u/0/uc?id=1_yK7e6ufzvW7-AaPLbXNJV1abrrl3njN&export=download')" class="btn btn-curriculo" style="margin-top: 10px;">
+                    <button onclick="btn_click_open('https://drive.usercontent.google.com/u/0/uc?id=1JBm98cbBALTEQ2H4IxeSHHWze3qJFQOA&export=download')" class="btn btn-curriculo" style="margin-top: 10px;">
                         <i class="fa-solid fa-upload" style="margin-left: 10px;"></i>
                         Curriculo
                     </button>
@@ -132,55 +135,66 @@
                             <div class="img-card">
                                 <img src="img/web-card-1.png" alt="Finans">
                             </div>
-                            <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
-                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
-                            <ul type="none" id="menu-icones-ferramentas">
-                                <li><i class="fa-brands fa-html5" style="color: #FC490B;"></i></li>
-                                <li><i class="fa-brands fa-css3-alt" style="color: #00A1DF;"></i></li>
-                            </ul>
+                            <div class="descricao-card">
+                                <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
+                                <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                                <ul type="none" class="menu-icones-ferramentas">
+                                    <li><i class="fa-brands fa-html5" style="color: #FC490B;"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt" style="color: #00A1DF;"></i></li>
+                                </ul>
+                            </div>
+                          
                             <input onclick="btn_click_open('https://github.com/MaiconCode/Finans/tree/master')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
                         <div class="card card-2">
                             <div class="img-card">
                                 <img src="img/project-card1.png" alt="Calculadora">
                             </div>
-                            <h3 style="margin-top: 10px;" class="cor-primaria">Calculadora</h3>
-                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
-                            <ul type="none" id="menu-icones-ferramentas">
-                                <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
-                                <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
-                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
-                            </ul>
+
+                            <div class="descricao-card">              
+                                <h3 style="margin-top: 10px;" class="cor-primaria">Calculadora</h3>
+                                <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                                <ul type="none" class="menu-icones-ferramentas">
+                                    <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
+                                    <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
+                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
+                                </ul>
+                            </div>
                             <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_minha-primeira-calculadora-o-reposit%C3%B3rio-activity-7205263579728502784-GAgB?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
                         <div class="card card-3">
                             <div class="img-card">
                                 <img src="img/tela de tarefas.png" alt="Lista de Tarefas">
                             </div>
-                            <h3 style="margin-top: 10px;" class="cor-primaria">Lista de Tarefas</h3>
-                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
-                            <ul type="none">
-                                <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
-                                <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
-                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
-                                <li><img src="img/img-icones/materialize.png" width="40"></li>
-                                <li><img src="img/img-icones/PHP-logo.svg.png" width="40"></li>
-                                <li><img src="img/img-icones/mysql.png" width="40"></li>
+                            <div class="descricao-card">
+                                <h3 style="margin-top: 10px;" class="cor-primaria">Lista de Tarefas</h3>
+                                <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                                <ul type="none" class="menu-icones-ferramentas">
+                                    <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
+                                    <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
+                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
+                                    <li><img src="img/img-icones/materialize.png" width="40"></li>
+                                    <li><img src="img/img-icones/PHP-logo.svg.png" width="40"></li>
+                                    <li><img src="img/img-icones/mysql.png" width="40"></li>
                             </ul>
+                            </div>
+                            
                             <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_desenvolvimento-projeto-de-tarefas-di%C3%A1rias-activity-7205003499053441024-qFkQ?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
                         <div class="card card-4">
                             <div class="img-card">
                                 <img src="img/breve.png" alt="Em breve">
                             </div>
-                            <h3 style="margin-top: 10px;" class="cor-primaria">Em Breve</h3>
+                            <div class="descricao-card">
+                              <h3 style="margin-top: 10px;" class="cor-primaria">Em Breve</h3>
                             <p style="color: gray; font-size: 14px;">Ferramentas</p>
-                            <ul type="none">
+                            <ul type="none" class="menu-icones-ferramentas">
                                 <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
                                 <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
                                 <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
                                 <li><img src="img/img-icones/PHP-logo.svg.png" width="40"></li>
-                            </ul>
+                            </ul>  
+                            </div>
                             <input onclick="btn_click_open('https://www.linkedin.com/in/maicon-computacao/')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
                     </div>

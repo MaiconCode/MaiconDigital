@@ -1,5 +1,13 @@
 /* Area do Desktop */
 @media screen and (min-width: 1024px) {
+
+    .title-into {
+        height: 85px;
+        display: inline;
+        color: #0F5972;
+        width: 350px;
+        font-size: 32px;
+    }
     #aprensetacao-header {
         display: flex;
         flex-direction: column;
@@ -101,6 +109,7 @@
     }
 
     #barra-navegacao {
+        overflow-x: hidden;
         position: absolute;
         top: 0;
         width: 100%;
@@ -144,9 +153,9 @@
         display: none;
     }
     #icon-btn-menu {
-        position: fixed;
+        position: absolute;
         z-index: 2;
-        right: 0;
+        right: 5%;
         display: block;
     } 
     
@@ -154,7 +163,6 @@
         font-size: 40px;
         color: #cacccd;
         cursor: pointer;
-        padding: 10px;
     }
     #bars {
         display: block;
@@ -219,8 +227,6 @@
         left: 0;
         padding: 0px 20px;
     }
-    
-
     #title-project-two {
         display: block;
     }
@@ -278,6 +284,12 @@
         margin-top: 5em;
         min-width: 300px;
     }
+    .title-into {
+        height: 150px;
+        font-size: 28px;
+        color: #0F5972;
+        margin-bottom: 15px;
+    }
     #icon-arrows {
         display: none;
     }
@@ -310,6 +322,9 @@
     #aprensetacao-header {
         width: 40%;
         min-width: 150px;
+    }
+    #aprensetacao-header > p {
+        margin-top: 16px;
     }
     #div-header-img > img{
         width: 40%;

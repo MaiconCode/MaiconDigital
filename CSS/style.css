@@ -12,6 +12,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 #barra-navegacao {
     display: flex;
     justify-content: space-between;
@@ -103,9 +104,8 @@ a {
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-top: 3em;
-    padding: 2em;
     border-radius: 10px;
-    min-width: 300;
+    min-width: 300px;
 }
 #campo-cards {
     background-color: #0F5972;
@@ -119,19 +119,19 @@ a {
     width: 28%;
     border-radius: 10px;
     padding: 10px;
-    /* min-width: 200px; */
     background-color: #DCE4EC;
     box-shadow: #122c34 10px 10px;
 }
-.card > ul {
+.descricao-card {
+    padding: 10px;
+}
+.menu-icones-ferramentas {
     display: flex;
     margin-top: 5px;
 }
-.card > ul > li {
+.menu-icones-ferramentas > li {
     padding-right: 5px;
     font-size: 19px;
-
-
 }
 .btn-view-project {
     background-color: #0F5972;
@@ -178,10 +178,10 @@ a {
     display: flex;
     justify-content: center;
 }
-.img-card > img{
-    border-radius: 10px;
-    width: 90%;
-    height: 150px;
+.img-card > img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 180px;
 }
 
 /* ============= Sessão de Contatos  =============================*/
@@ -347,4 +347,7 @@ footer {
     transition: all 1.5s;
     transform: translateX(0);
 
+}
+section {
+    width: 100%;
 }

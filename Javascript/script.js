@@ -10,14 +10,16 @@ bars.addEventListener('click', function() {
     // Abrindo o menu 
     menu.style.display = 'flex'
 
+    // Colocando os icones
+    bars.style.display = 'none'
+    bars_close.style.display = 'block'
+
     // Aplicando animação
     menu.style.animationName = 'animacao-menu'
     menu.style.animationDuration = '1.5s'
     menu.style.animationFillMode = 'forwards'
 
-    // Colocando os icones
-    bars_close.style.display = 'block'
-    bars.style.display = 'none'
+    
 
 })
 
@@ -36,22 +38,21 @@ function btn_click_open(url) {
     window.location.href = url
 }
 
-// Apresentação do sessão sobre mim
+//Apresentação do sessão sobre mim
 let texto = "Seja muito bem vindo ao meu portifório"
-let apresentacao = document.getElementsByClassName('subtitulo')[0]
+let apresentacao = document.getElementsByClassName('title-into')[0]
 let indice = 0
 apresentacao.innerHTML = ''
-
 textoArray = texto.split('')
 
 let delay = setInterval(function(){
     let tempo = setInterval(function(){
-        apresentacao.innerHTML += textoArray[indice]
-        indice += 1
+    apresentacao.innerHTML += textoArray[indice]
+    indice += 1
     
-        if(indice == textoArray.length) {
-            clearInterval(tempo)
-        }
+    if(indice == textoArray.length) {
+        clearInterval(tempo)
+    }
         clearTimeout(delay)
     }, 100)
 }, 2000)
