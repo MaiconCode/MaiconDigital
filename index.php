@@ -144,7 +144,7 @@
                                 </ul>
                             </div>
                           
-                            <input onclick="btn_click_open('https://github.com/MaiconCode/Finans/tree/master')" type="button" value="Visualizar" class="btn-view-project">
+                            <input onclick="btn_click_open('Paginas externa/Finans/index.html')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
                         <div class="card card-2">
                             <div class="img-card">
@@ -160,7 +160,7 @@
                                     <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
                                 </ul>
                             </div>
-                            <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_minha-primeira-calculadora-o-reposit%C3%B3rio-activity-7205263579728502784-GAgB?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
+                            <input onclick="btn_click_open('Paginas externa/Calculadora/index.html')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
                         <div class="card card-3">
                             <div class="img-card">
