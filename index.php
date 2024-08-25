@@ -137,7 +137,7 @@
                             </div>
                             <div class="descricao-card">
                                 <h3 style="margin-top: 10px;" class="cor-primaria">Finans</h3>
-                                <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                                <p style="color: gray; font-size: 14px; margin-top: 10px;">Ferramentas</p>
                                 <ul type="none" class="menu-icones-ferramentas">
                                     <li><i class="fa-brands fa-html5" style="color: #FC490B;"></i></li>
                                     <li><i class="fa-brands fa-css3-alt" style="color: #00A1DF;"></i></li>
@@ -148,19 +148,23 @@
                         </div>
                         <div class="card card-2">
                             <div class="img-card">
-                                <img src="img/project-card1.png" alt="Calculadora">
+                                <img src="img/web-card-3.png" alt="Sistema de Gerenciamento do aluno">
                             </div>
 
                             <div class="descricao-card">              
-                                <h3 style="margin-top: 10px;" class="cor-primaria">Calculadora</h3>
-                                <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                                <h3 style="margin-top: 10px;" class="cor-primaria">Sistema de Gereciamento de Aluno</h3>
+                                <p style="color: gray; font-size: 14px; margin-top: 10px;">Ferramentas</p>
                                 <ul type="none" class="menu-icones-ferramentas">
                                     <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
                                     <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
                                     <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
+                                    <li><img src="img/img-icones/PHP-logo.svg.png" width="40"></li>
+                                    <li><img src="img/img-icones/mysql.png" width="40"></li>
+                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" width="22"></li>
+                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" width="18"></li>
                                 </ul>
                             </div>
-                            <input onclick="btn_click_open('Paginas externa/Calculadora/index.html')" type="button" value="Visualizar" class="btn-view-project">
+                            <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_hoje-eu-fiz-projeto-de-gerenciamento-de-activity-7224196036917919747-htLV?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
                         <div class="card card-3">
                             <div class="img-card">
@@ -168,7 +172,7 @@
                             </div>
                             <div class="descricao-card">
                                 <h3 style="margin-top: 10px;" class="cor-primaria">Lista de Tarefas</h3>
-                                <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                                <p style="color: gray; font-size: 14px; margin-top: 10px;">Ferramentas</p>
                                 <ul type="none" class="menu-icones-ferramentas">
                                     <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
                                     <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
@@ -187,7 +191,7 @@
                             </div>
                             <div class="descricao-card">
                               <h3 style="margin-top: 10px;" class="cor-primaria">Em Breve</h3>
-                            <p style="color: gray; font-size: 14px;">Ferramentas</p>
+                            <p style="color: gray; font-size: 14px; margin-top: 10px;">Ferramentas</p>
                             <ul type="none" class="menu-icones-ferramentas">
                                 <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
                                 <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
@@ -217,11 +221,11 @@
                             <input name="email" type="email" class="input" placeholder="Digite o seu email...">
                         </div>
                         <div class="div-input">
-                            <label for="Assunto">titulo:</label><br>
+                            <label for="Assunto">Titulo:</label><br>
                             <input name="assunto" type="text" class="input" placeholder="Digite o seu assunto...">
                         </div>
                         <div class="div-input">
-                            <label for="texto">testo:</label><br>
+                            <label for="texto">Texto:</label><br>
                             <textarea name="texto" name="texto" id="texto" class="input" placeholder="Digite aqui.."></textarea>
                         </div>
                         <div>

@@ -128,9 +128,10 @@ a {
 .menu-icones-ferramentas {
     display: flex;
     margin-top: 5px;
+    align-items: center;
 }
 .menu-icones-ferramentas > li {
-    padding-right: 5px;
+    margin-right: 10px;
     font-size: 19px;
 }
 .btn-view-project {
@@ -198,18 +199,18 @@ form {
     margin-top: 15px;
 }
 #texto {
-    height: 300px;
+    height: 200px;
     font-family: "Kumbh Sans", sans-serif;
     padding: 10px;
     font-size: 16px;
 }
 label {
     color: #0F5972;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
 }
 .div-input {
-    margin-top: 1.3em;
+    margin-top: 1.5em;
 }
 .input {
     font-family: "Kumbh Sans", sans-serif;
