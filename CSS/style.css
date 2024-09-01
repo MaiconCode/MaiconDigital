@@ -79,25 +79,107 @@ a {
     transform: scaleX(1.1);
     transform: scaleY(1.2);
 }
+/*  ========= Slides de Certificados ============ */
+#sessao-certificados {
 
-#sessao-skills {
-    background-color: #9EC5D2;
-    width: 100%;
+    background-color: #0F5972;
+    padding: 15px;
 }
-#div-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 3em 0em;
-}
-#div-list > div > ul {
+.slider {
     margin-top: 10px;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
 }
+.slides {
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 50em; 
+    position: relative;
+    transition: 1s;
+    margin-right: 15px;
+}
+.slide img {
+    width: 500px;
+    border-radius: 15px;
+}
+.manual-navigation {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+.manual-btn:hover {
+    background-color: #0F5972;
+}
+#radio1:checked ~ .first {
+    margin: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -32em;
+}
+#radio3:checked ~ .first {
+    margin-left: -64em;
+}
+#radio4:checked ~ .first {
+    margin-left: -97em;
+}
+.navigation-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px; 
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #d6edf5;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #d6edf5;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #d6edf5;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #d6edf5;
+}
+
+/* ========= Sessão de Cards =================== */
 #section-project {
     background-color: #fff;
     padding: 50px 0px 50px 0px;
 }
 
-/* ========= Sessão de Cards =================== */
 #div-cards {
     display: flex;
     align-items: center;
@@ -336,6 +418,8 @@ footer {
     font-size: 16px;
     padding: 5px 0px;
 }
+
+/*
 .hidden {
     opacity: 0;
     filter: blur(15px);
@@ -348,7 +432,7 @@ footer {
     transition: all 1.5s;
     transform: translateX(0);
 
-}
+}*/
 section {
     width: 100%;
 }

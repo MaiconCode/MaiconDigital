@@ -43,7 +43,7 @@
                 <ul id="lista-menus" type="none">
                     <li><a href="#barra-navegacao">Inicio</a></li>
                     <li><a onclick="fechar_menu()" href="#sessao-about-me">Sobre mim</a></li>
-                    <li><a onclick="fechar_menu()" href="#sessao-skills">Habilidades</a></li>
+                    <li><a onclick="fechar_menu()" href="#sessao-certificados">Certificados</a></li>
                     <li><a onclick="fechar_menu()" href="#section-project">Projetos</a></li>
                     <li><a onclick="fechar_menu()" href="#section-contact">Contato</a></li>
                 </ul>
@@ -88,38 +88,49 @@
                 <img id="img-perfil" src="img/maicon.png" alt="Foto do Maicon">
             </div>
         </section>
-        <section id="sessao-skills" class="hidden">
-            <div class="container">
-                <div style="padding: 1.5em 0;">
-                    <h2 class="subtitulo" >Habilidades</h2>
+        <section id="sessao-certificados" class="hidden">
+            <div class="container" style="margin: 2em 5em;">
+                <h2 class="subtitulo" style="color: white;">Certificados</h2>
+            </div>
+            <div class="slider">
+                <div class="slides">
+
+                    <!-- Radio buttons -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="img/certificado1.png" alt="imagem1">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/certificado2.png" alt="imagem2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/certificado3.png" alt="imagem3">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/certificado4.png" alt="imagem4">
+                    </div>
+
+                    <!-- Navegação dos slides -->
+                     <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                     </div>
                 </div>
-                <div id="div-list">
-                    <div>
-                        <h2 class="cor-primaria">Hard Skills</h2>
-                        <ul class="menu-list-skills" type="none">
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Desenvolvimento Web</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Redes de Computadores</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Design</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Pacote Office</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="cor-primaria">Soft Skills</h2>
-                        <ul class="menu-list-skills" type="none">
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Comunicação Interpessoal</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Proatividade</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Organização</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Flexibilidade</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="cor-primaria">Extra</h2>
-                        <ul class="menu-list-skills" type="none">
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Inglês Intermediário</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Analítico</li>
-                            <li><i class="fa-solid fa-check" style="color: #0F5972; margin-right: 10px;"></i>Dinâmico</li>
-                        </ul>
-                    </div>
+                
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
         </section>
@@ -250,7 +261,7 @@
                         <li style="color: rgb(164, 164, 164);">Navegação</li>
                         <li><a href="#barra-navegacao">Inicio</a></li>
                         <li><a onclick="fechar_menu()" href="#sessao-about-me">Sobre mim</a></li>
-                        <li><a onclick="fechar_menu()" href="#sessao-skills">Habilidades</a></li>
+                        <li><a onclick="fechar_menu()" href="#sessao-certificados">Certificados</a></li>
                         <li><a onclick="fechar_menu()" href="#section-project">Projetos</a></li>
                         <li><a onclick="fechar_menu()" href="#section-contact">Contato</a></li>
                         </ul>

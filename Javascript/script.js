@@ -57,6 +57,22 @@ let delay = setInterval(function(){
     }, 100)
 }, 2000)
 
+// Animação de carrosel de certificados
+let count = 1
+document.getElementById('radio1').checked = true
+
+setInterval(function() {
+    nextImage()
+}, 3000)
+
+function nextImage() {
+    count++
+    if(count > 4) {
+        count = 1
+    }
+    document.getElementById('radio' + count).checked = true
+
+}
 
 // Transição dos cards do projeto
 function moverCards(direcao) {
@@ -99,6 +115,8 @@ function moverCards(direcao) {
 // =================== Animação com as sessões através do scroll ==================//
 //====================================================================================//
 
+/*
+
 const MyObserver = new IntersectionObserver((entries) => {
     
     entries.forEach( (entry) => {
@@ -115,4 +133,4 @@ const elements = document.querySelectorAll('.hidden')
 
 elements.forEach(el => {
     MyObserver.observe(el)
-})
+}) */
