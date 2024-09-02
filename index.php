@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scaleble=no">
-    <title>Maicon Digital - Portiforio</title>
+    <title>Maicon Digital - Portfólio</title>
 
     <!-- link do CSS -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/style-responsive.css">
 
     <link rel="shortcut icon" type="imagex/png" href="img/logo.png">
-
-
 
     <!-- Link do Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -34,6 +32,7 @@
         <div class="container">
             <nav id="barra-navegacao">
                 <div id="logo">
+                    <img width="50" src="img/logo.png" alt="">
                     <h1><a href="#">Maicon<span style="color: #0F5972">Digital</span></a></h1>
                 </div>
                 <div id="icon-btn-menu">
@@ -52,13 +51,13 @@
     </header>
 
     <section id="introducao" class="hidden"  style="min-width: 160px;">
-                <div id="aprensetacao-header">
-                    <h3 class="title-into" style="text-align: center; ">Seja muito bem vindo com a minha pagina</h3>
-                    <p>Aqui, você vai conhecer mais sobre mim através dos meus projetos, minhas atividades, habilidades e muito mais</p>
-                </div>
-                <div id="div-header-img">
-                    <img src="img/gato.png" alt="gao art" >
-                </div>
+        <div id="aprensetacao-header">
+            <h3 class="title-into" style="text-align: center; ">Seja muito bem vindo com a minha pagina</h3>
+            <p >Aqui, você vai conhecer mais sobre mim através dos meus projetos, minhas atividades, habilidades e muito mais</p>
+        </div>
+        <div id="div-header-img">
+            <img src="img/gato.png" alt="gao art" >
+        </div>
     </section>
 
     <!-- Conteudo da Pagina -->
@@ -88,7 +87,7 @@
                 <img id="img-perfil" src="img/maicon.png" alt="Foto do Maicon">
             </div>
         </section>
-        <section id="sessao-certificados" class="hidden">
+        <section id="sessao-certificados" class="hidden" style="display: none">
             <div class="container" style="margin: 2em 5em;">
                 <h2 class="subtitulo" style="color: white;">Certificados</h2>
             </div>
@@ -201,7 +200,7 @@
                                 <img src="img/breve.png" alt="Em breve">
                             </div>
                             <div class="descricao-card">
-                              <h3 style="margin-top: 10px;" class="cor-primaria">Em Breve</h3>
+                              <h3 class="cor-primaria">Em Breve</h3>
                             <p style="color: gray; font-size: 14px; margin-top: 10px;">Ferramentas</p>
                             <ul type="none" class="menu-icones-ferramentas">
                                 <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
@@ -221,7 +220,7 @@
             </div>
         </section>
         <section id="section-contact" class="hidden">
-            <div class="container">
+            <div>
                 <div>
                     <h2 class="subtitulo">Contato</h2>
                 </div>

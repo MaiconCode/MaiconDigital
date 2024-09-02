@@ -39,7 +39,7 @@ function btn_click_open(url) {
 }
 
 //Apresentação do sessão sobre mim
-let texto = "Seja muito bem vindo ao meu portifório"
+let texto = "Seja muito bem vindo!"
 let apresentacao = document.getElementsByClassName('title-into')[0]
 let indice = 0
 apresentacao.innerHTML = ''
