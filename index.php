@@ -3,8 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, user-scaleble=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Maicon Digital - Portfólio</title>
 
     <!-- link do CSS -->
@@ -141,6 +140,26 @@
                 <div id="campo-cards">
                     <div id="div-cards">
                         <h2 id="title-project-two" class="subtitulo cor-secundaria" >My Project</h2>
+
+                        <div class="card card-3">
+                            <div class="img-card">
+                                <img src="img/web-card-2.png" alt="Lista de Tarefas">
+                            </div>
+                            <div class="descricao-card">
+                                <h3 style="margin-top: 10px;" class="cor-primaria">ByCred - Site de solicitação FGTS</h3>
+                                <p style="color: gray; font-size: 14px; margin-top: 10px;">Ferramentas</p>
+                                <ul type="none" class="menu-icones-ferramentas">
+                                    <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="25"></li>
+                                    <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="45"></li>
+                                    <li><img src="img/img-icones/photoshop.png" alt="Logo do photoshop" width="25"></li>
+                                    <li><img src="img/img-icones/javascript.png" width="25" style="margin-left: 10px;"></li>
+                                    <li><img style="margin-left: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" width="15"></li>
+                            </ul>
+                            </div>
+                            
+                            <input onclick="btn_click_open('https://bycred.com.br/')" type="button" value="Visualizar" class="btn-view-project">
+                        </div>
+
                         <div class="card card-1">
                             <div class="img-card">
                                 <img src="img/web-card-1.png" alt="Finans">
@@ -176,25 +195,7 @@
                             </div>
                             <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_hoje-eu-fiz-projeto-de-gerenciamento-de-activity-7224196036917919747-htLV?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
                         </div>
-                        <div class="card card-3">
-                            <div class="img-card">
-                                <img src="img/tela de tarefas.png" alt="Lista de Tarefas">
-                            </div>
-                            <div class="descricao-card">
-                                <h3 style="margin-top: 10px;" class="cor-primaria">Lista de Tarefas</h3>
-                                <p style="color: gray; font-size: 14px; margin-top: 10px;">Ferramentas</p>
-                                <ul type="none" class="menu-icones-ferramentas">
-                                    <li><img src="img/img-icones/html-logo.jpg" alt="Logo do Html" width="20"></li>
-                                    <li><img src="img/img-icones/CSS-Logo.png" alt="Logo do CSS3" width="35"></li>
-                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="20"></li>
-                                    <li><img src="img/img-icones/materialize.png" width="40"></li>
-                                    <li><img src="img/img-icones/PHP-logo.svg.png" width="40"></li>
-                                    <li><img src="img/img-icones/mysql.png" width="40"></li>
-                            </ul>
-                            </div>
-                            
-                            <input onclick="btn_click_open('https://www.linkedin.com/posts/maicon-computacao_desenvolvimento-projeto-de-tarefas-di%C3%A1rias-activity-7205003499053441024-qFkQ?utm_source=share&utm_medium=member_desktop')" type="button" value="Visualizar" class="btn-view-project">
-                        </div>
+                        
                         <div class="card card-4">
                             <div class="img-card">
                                 <img src="img/breve.png" alt="Em breve">
